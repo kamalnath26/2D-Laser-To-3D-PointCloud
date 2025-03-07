@@ -1,0 +1,192 @@
+<?xml version="1.0" ?>
+<robot name="lidar_perpendicular" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find lidar_perpendicular_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find lidar_perpendicular_description)/urdf/lidar_perpendicular.trans" />
+<xacro:include filename="$(find lidar_perpendicular_description)/urdf/lidar_perpendicular.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.0 1.3158198810372226e-17 0.0015000000000000002" rpy="0 0 0"/>
+    <mass value="0.011447999999999998"/>
+    <inertia ixx="3e-06" iyy="3e-06" izz="7e-06" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://lidar_perpendicular_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://lidar_perpendicular_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="servo_body_1">
+  <inertial>
+    <origin xyz="-3.332055650750272e-07 0.0 0.01499971449043154" rpy="0 0 0"/>
+    <mass value="0.0437241674779468"/>
+    <inertia ixx="6e-06" iyy="1.4e-05" izz="1.3e-05" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.003" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://lidar_perpendicular_description/meshes/servo_body_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.003" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://lidar_perpendicular_description/meshes/servo_body_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="servo_gear_1">
+  <inertial>
+    <origin xyz="-3.469446951953614e-18 1.544655055131038e-17 0.0024464650804202903" rpy="0 0 0"/>
+    <mass value="0.0003428444305329218"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0175 -0.0 -0.03299" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://lidar_perpendicular_description/meshes/servo_gear_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0175 -0.0 -0.03299" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://lidar_perpendicular_description/meshes/servo_gear_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="servo_horn_1">
+  <inertial>
+    <origin xyz="1.734723475976807e-17 1.622771598673635e-17 0.0011279052134674158" rpy="0 0 0"/>
+    <mass value="0.000616421279497907"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0175 -0.0 -0.03799" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://lidar_perpendicular_description/meshes/servo_horn_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0175 -0.0 -0.03799" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://lidar_perpendicular_description/meshes/servo_horn_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="lidar_mount_1">
+  <inertial>
+    <origin xyz="-9.940409349276647e-06 0.02905322288108601 0.021791326095285155" rpy="0 0 0"/>
+    <mass value="0.034066519533003985"/>
+    <inertia ixx="2.2e-05" iyy="2.9e-05" izz="1.7e-05" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0175 -0.0 -0.04098" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://lidar_perpendicular_description/meshes/lidar_mount_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0175 -0.0 -0.04098" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://lidar_perpendicular_description/meshes/lidar_mount_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="lidar_base_1">
+  <inertial>
+    <origin xyz="-0.0037433006765159593 -0.009876364212401345 -4.992205079878964e-09" rpy="0 0 0"/>
+    <mass value="0.030748489817916343"/>
+    <inertia ixx="5e-06" iyy="7e-06" izz="5e-06" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.021226 -0.02745 -0.07799" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://lidar_perpendicular_description/meshes/lidar_base_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.021226 -0.02745 -0.07799" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://lidar_perpendicular_description/meshes/lidar_base_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="lidar_1">
+  <inertial>
+    <origin xyz="-1.5744538192641322e-07 -0.005109330306681065 7.277157430957137e-07" rpy="0 0 0"/>
+    <mass value="0.012917217120314307"/>
+    <inertia ixx="1e-06" iyy="2e-06" izz="1e-06" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.017403 -0.00735 -0.07799" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://lidar_perpendicular_description/meshes/lidar_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.017403 -0.00735 -0.07799" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://lidar_perpendicular_description/meshes/lidar_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="servo_body_joint" type="fixed">
+  <origin xyz="0.0 0.0 0.003" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="servo_body_1"/>
+</joint>
+
+<joint name="servo_gear_joint" type="revolute">
+  <origin xyz="0.0175 0.0 0.02999" rpy="0 0 0"/>
+  <parent link="servo_body_1"/>
+  <child link="servo_gear_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+  <limit upper="3.141593" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="servo_horn_joint" type="fixed">
+  <origin xyz="0.0 0.0 0.005" rpy="0 0 0"/>
+  <parent link="servo_gear_1"/>
+  <child link="servo_horn_1"/>
+</joint>
+
+<joint name="lidar_mount_joint" type="fixed">
+  <origin xyz="0.0 0.0 0.00299" rpy="0 0 0"/>
+  <parent link="servo_horn_1"/>
+  <child link="lidar_mount_1"/>
+</joint>
+
+<joint name="lidar_base_joint" type="fixed">
+  <origin xyz="0.003726 0.02745 0.03701" rpy="0 0 0"/>
+  <parent link="lidar_mount_1"/>
+  <child link="lidar_base_1"/>
+</joint>
+
+<joint name="lidar_joint" type="fixed">
+  <origin xyz="-0.003823 -0.0201 0.0" rpy="0 0 0"/>
+  <parent link="lidar_base_1"/>
+  <child link="lidar_1"/>
+</joint>
+
+</robot>
