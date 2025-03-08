@@ -25,6 +25,10 @@ Refer to report for more details: [Project Report](EECE%205554%20Robot%20Sensing
 
 Project Presentation: [Project Presentation](RSN%20Group%201%20Final%20Project%20Presentation.pdf)
 
+Design Simulation: [Desgin Perpendicular Setup](https://youtu.be/tiI5wXRkyYs)
+
+Design Simuation: [Design Parallel Setup](https://youtu.be/xUL9Ji8f-34)
+
 Simualtion Video: [Simualtion](https://drive.google.com/file/d/1uJc3ja7bnLx--u4m_f2NeEjaWzPWkOii/view?usp=drive_link)
 
 Data Collection Videos: [Data Collection](https://drive.google.com/file/d/1g8c5KrMecnTnCA1v_zL3hP36YdpIE01s/view?usp=drive_link)
