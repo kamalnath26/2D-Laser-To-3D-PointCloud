@@ -25,9 +25,13 @@ Refer to report for more details: [Project Report](EECE%205554%20Robot%20Sensing
 
 Project Presentation: [Project Presentation](RSN%20Group%201%20Final%20Project%20Presentation.pdf)
 
-Design Simulation Perpendicular Setup: ![Desgin Perpendicular Setup](https://img.youtube.com/vi/tiI5wXRkyYs/0.jpg)(https://youtu.be/tiI5wXRkyYs)
+Design Simulation Perpendicular Setup: 
 
-Design Simuation Parallel Setup: ![Design Parallel Setup](https://img.youtube.com/vi/xUL9Ji8f-34/0.jpg)(https://youtu.be/xUL9Ji8f-34)
+![Desgin Perpendicular Setup](https://img.youtube.com/vi/tiI5wXRkyYs/0.jpg)(https://youtu.be/tiI5wXRkyYs)
+
+Design Simuation Parallel Setup: 
+
+![Design Parallel Setup](https://img.youtube.com/vi/xUL9Ji8f-34/0.jpg)(https://youtu.be/xUL9Ji8f-34)
 
 Simualtion Video: ![Simualtion](laser_2d_to_3d/images/lidar_perpendicular_setup_movement_in_sim-ezgif.com-video-to-gif-converter.gif)
 
